@@ -1,0 +1,36 @@
+.cardWrapper {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+}
+
+.imageAndNameWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.itemName {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.priceAndAvailabilityWrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.price {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.availability {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+}

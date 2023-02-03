@@ -1,0 +1,11 @@
+.addToCartButton {
+  display: flex;
+  justify-content: center;
+  border: none;
+  border-radius: 6px;
+  background-color: #ff7a00;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #fff;
+}
