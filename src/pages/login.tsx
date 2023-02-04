@@ -6,7 +6,7 @@ export default function Login() {
     return(
         <div className={styles.body}>
 
-          <TitleLogoAndP pText="Seu primeiro passo para uma viajem retrô."/>
+          <TitleLogoAndP pText="Seu primeiro passo para uma viagem retrô."/>
 
             <div className={styles.divFormLogin}>
 
