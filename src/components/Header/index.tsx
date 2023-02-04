@@ -28,15 +28,15 @@ export default function Header() {
 
                 </div>
                 
-                <div>
-                    <button>
+                <div className={styles.container}>
+                    <button className={styles.secondaryButton}>
                         <ShoppingCartSimple size={32} color="#FFF" />
                         Carrinho
                     </button>
 
-                    <button>
-                        <User size={32} />
+                    <button className={`${styles.userButton} ${styles.secondaryButton}`}>
                         Kadson
+                        <User size={32} />
                     </button>
                 </div>
 
