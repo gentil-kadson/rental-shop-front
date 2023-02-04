@@ -47,7 +47,8 @@
   font-size: 1.5rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 1rem;
   padding: 15px 20px;
   width: 195px;
   height: 48px;
