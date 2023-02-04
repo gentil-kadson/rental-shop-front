@@ -21,3 +21,7 @@
 
   filter: brightness(0.94);
 }
+
+.addToCartButton:focus {
+  border: none;
+}
