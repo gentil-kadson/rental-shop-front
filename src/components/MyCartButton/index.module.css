@@ -1,0 +1,25 @@
+.myCartButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #ff7a00;
+
+  border-radius: 8px;
+  border: none;
+
+  padding: 10px 20px;
+
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+
+  transition: filter 0.2s;
+}
+
+.myCartButton:hover {
+  cursor: pointer;
+  filter: brightness(0.95);
+}

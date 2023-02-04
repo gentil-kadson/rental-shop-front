@@ -1,7 +1,25 @@
 import Head from "next/head";
 import styles from "@/styles/Home.module.css";
+import ItemCard from "@/components/ItemCard";
+import { useEffect, useState } from "react";
+import api from "@/services/api";
+
+type Item = {
+  nome: string;
+  preco: number;
+  disponivel: boolean;
+  foto: string;
+};
 
 export default function Home() {
+  const [item, setItem] = useState<Item>({} as Item);
+
+  useEffect(() => {
+    api.get("/itens/3/").then((response) => {
+      setItem(response.data);
+    });
+  }, []);
+
   return (
     <>
       <Head>
@@ -10,6 +28,14 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <div>
+        <ItemCard
+          available={item.disponivel}
+          image={item.foto}
+          name={item.nome}
+          price={item.preco}
+        />
+      </div>
     </>
   );
 }
