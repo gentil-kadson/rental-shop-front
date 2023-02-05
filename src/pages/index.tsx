@@ -14,11 +14,11 @@ type Item = {
 export default function Home() {
   const [item, setItem] = useState<Item>({} as Item);
 
-  useEffect(() => {
-    api.get("/itens/3/").then((response) => {
-      setItem(response.data);
-    });
-  }, []);
+  // useEffect(() => {
+  //   api.get("/itens/3/").then((response) => {
+  //     setItem(response.data);
+  //   });
+  // }, []);
 
   return (
     <>
@@ -30,10 +30,10 @@ export default function Home() {
       </Head>
       <div>
         <ItemCard
-          available={item.disponivel}
-          image={item.foto}
-          name={item.nome}
-          price={item.preco}
+          available={true}
+          image={"/images/playstation_2.png"}
+          name={"PlayStation 2"}
+          price={120}
         />
       </div>
     </>
