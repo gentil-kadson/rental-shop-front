@@ -12,10 +12,6 @@ export default function Locador() {
 
             <Title title="Itens disponíveis" />
 
-            <ButtonPrimary 
-                title="Cadastrar item"
-                icon={<Plus />}
-            />
         </>
     )
 }
