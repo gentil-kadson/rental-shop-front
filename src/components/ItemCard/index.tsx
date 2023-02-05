@@ -24,7 +24,10 @@ export default function ItemCard({
       </div>
       <div className={styles.priceAndAvailabilityWrapper}>
         <span className={styles.price}>R$ {price}</span>
-        <span className={styles.availability}>
+        <span
+          className={styles.availability}
+          style={{ color: available ? "#0C3CE5" : "#EB1414" }}
+        >
           {available ? "Disponível" : "Indisponível"}
         </span>
       </div>
