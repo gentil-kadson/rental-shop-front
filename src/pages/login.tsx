@@ -5,11 +5,11 @@ import styles from "@/styles/Login.module.css";
 export default function Login() {
   return (
     <div className={styles.body}>
+      <TitleLogoAndP pText="Seu primeiro passo para uma viagem retrô." />
       <div className={styles.divFormLogin}>
         <form className={styles.formLogin} action="">
           <label className={styles.labelsForm}>E-mail: </label>
           <input type="text" name="e-mail" className={styles.inputsForm} />
-          <TitleLogoAndP pText="Seu primeiro passo para uma viagem retrô." />
 
           <label className={styles.labelsForm}>Senha: </label>
           <input type="text" name="senha" className={styles.inputsForm} />
