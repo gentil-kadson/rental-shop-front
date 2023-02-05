@@ -1,0 +1,19 @@
+import { ReactNode } from "react"
+
+import styles from "./styles.module.css"
+
+interface ButtonPrimaryProps {
+    title: string
+    icon?: ReactNode 
+}
+
+export default function ButtonPrimary({ title, icon }: ButtonPrimaryProps) {
+    return (
+        <>
+            <button className={styles.buttonPrimary}>
+                {icon}
+                {title}
+            </button>
+        </>
+    )
+}
