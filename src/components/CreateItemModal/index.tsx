@@ -1,10 +1,11 @@
 import * as Dialog from '@radix-ui/react-dialog';
-import * as Checkbox from '@radix-ui/react-checkbox';
-import { Check, Plus, Upload, X } from 'phosphor-react';
+
+import { Plus, X } from 'phosphor-react';
 import ButtonPrimary from '../ButtonPrimary';
 
 import styles from "./styles.module.css"
 import UploadImageButton from '../UploadImageButton';
+import Checkbox from './Checkbox';
 
 export default function CreateItemModal() {
     return (
@@ -36,18 +37,7 @@ export default function CreateItemModal() {
                         <div className={styles.uploadAndCheckboxContainer}>
                             <UploadImageButton />
 
-                            <div>
-                                <Checkbox.Root>
-                                    <Checkbox.Indicator>
-                                        <Check 
-                                            size={20}
-                                            color="#FFF"
-                                        />
-                                    </Checkbox.Indicator>
-
-                                    <span>Item disponível</span>
-                                </Checkbox.Root>
-                            </div>
+                            <Checkbox />
                         </div>
 
                         <ButtonPrimary title='Salvar' />

@@ -1,0 +1,29 @@
+.checkboxContainer {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.checkboxRoot {
+  background-color: #ff7a00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.56rem;
+  height: 1.56rem;
+  border: none;
+  border-radius: 6px;
+}
+
+.checkboxRoot:hover {
+  cursor: pointer;
+}
+
+.checkbox {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
