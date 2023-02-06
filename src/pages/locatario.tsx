@@ -5,14 +5,20 @@ import { Plus } from "phosphor-react";
 import * as Dialog from '@radix-ui/react-dialog';
 import CreateItemModal from "@/components/CreateItemModal";
 
+import styles from "../styles/locatario.module.css"
+
 export default function Locatario() {
     return (
         <>
             <Header />
 
-            <Title title="Meus itens" />
-            
-            <CreateItemModal />
+            <section className={styles.sectionMyItems}>
+                <Title title="Meus itens" />
+                
+                <CreateItemModal />
+
+            </section>
+
         </>
     )
 }
