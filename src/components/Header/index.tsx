@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { MagnifyingGlass, ShoppingCartSimple, User } from "phosphor-react"
 
-import styles from "./index.module.css"
+import styles from "./styles.module.css"
 
 export default function Header() {
     return (
