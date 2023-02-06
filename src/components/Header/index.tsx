@@ -29,10 +29,10 @@ export default function Header() {
                 </div>
                 
                 <div className={styles.container}>
-                    <button className={styles.secondaryButton}>
+                    {/* <button className={styles.secondaryButton}>
                         <ShoppingCartSimple color="#FFF" size={20} />
                         Carrinho
-                    </button>
+                    </button> */}
 
                     <button className={`${styles.userButton} ${styles.secondaryButton}`}>
                         Kadson
