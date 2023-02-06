@@ -1,6 +1,25 @@
+.titleModal {
+  font-size: 1.88rem;
+  text-align: center;
+  font-weight: 600;
+  color: #181818;
+  margin-bottom: 1.5rem;
+}
+
 .fieldset {
   display: flex;
   flex-direction: column;
+  border: none;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.input {
+  padding: 1rem;
+  border-radius: 6px;
+  background-color: rgba(192, 192, 192, 0.31);
+  color: #181818;
   border: none;
 }
 
@@ -24,11 +43,24 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 4rem;
+  padding: 46px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .content:focus {
   outline: none;
+}
+
+.closeModal {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: transparent;
+  border: none;
+}
+
+.closeModal:hover {
+  cursor: pointer;
 }
 
 .buttonPrimary {
@@ -51,10 +83,6 @@
   cursor: pointer;
   transition: 0.3s;
   background: rgba(255, 122, 0, 0.8);
-}
-
-.titleModal {
-  font-size: 1.88rem;
 }
 
 .uploadAndCheckboxContainer {

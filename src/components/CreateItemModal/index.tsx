@@ -1,6 +1,6 @@
 import * as Dialog from '@radix-ui/react-dialog';
 import * as Checkbox from '@radix-ui/react-checkbox';
-import { Check, Plus, Upload } from 'phosphor-react';
+import { Check, Plus, Upload, X } from 'phosphor-react';
 import ButtonPrimary from '../ButtonPrimary';
 
 import styles from "./styles.module.css"
@@ -15,43 +15,45 @@ export default function CreateItemModal() {
                 </Dialog.Trigger>
 
                 <Dialog.Portal>
-                <Dialog.Overlay className={styles.overlay} />
-                <Dialog.Content className={styles.content}>
-                    <Dialog.Title className={styles.titleModal}>Cadastrar item</Dialog.Title>
-                    <Dialog.Close />
+                    <Dialog.Overlay className={styles.overlay} />
+                    <Dialog.Content className={styles.content}>
+                        <Dialog.Title className={styles.titleModal}>Cadastrar item</Dialog.Title>
+                        <Dialog.Close className={styles.closeModal}>
+                            <X size={20} aria-label="Fechar" />
+                        </Dialog.Close>
 
-                    <fieldset className={styles.fieldset}>
-                        <label htmlFor="name">Nome</label>
-                        <input type="text" placeholder='Fulano' id='name' />
-                    </fieldset>
+                        <fieldset className={styles.fieldset}>
+                            <label htmlFor="name">Nome do item</label>
+                            <input type="text" placeholder='Ex.: console' id='name' className={styles.input} />
+                        </fieldset>
 
-                    <fieldset className={styles.fieldset}>
-                        <label htmlFor="price">Preço(R$)</label>
-                        <input type="number" placeholder='R$ 20,00' id='price' />
-                    </fieldset>
+                        <fieldset className={styles.fieldset}>
+                            <label htmlFor="price">Preço(R$)</label>
+                            <input type="number" placeholder='R$ 20,00' id='price' className={styles.input} />
+                        </fieldset>
 
-                    <div className={styles.uploadAndCheckboxContainer}>
-                        <button>
-                            <Upload size={20} />
-                            Adicionar imagem
-                        </button>
+                        <div className={styles.uploadAndCheckboxContainer}>
+                            <button>
+                                <Upload size={20} />
+                                Adicionar imagem
+                            </button>
 
-                        <div>
-                            <Checkbox.Root>
-                                <Checkbox.Indicator>
-                                    <Check 
-                                        size={20}
-                                        color="#FFF"
-                                    />
-                                </Checkbox.Indicator>
+                            <div>
+                                <Checkbox.Root>
+                                    <Checkbox.Indicator>
+                                        <Check 
+                                            size={20}
+                                            color="#FFF"
+                                        />
+                                    </Checkbox.Indicator>
 
-                                <span>Item disponível</span>
-                            </Checkbox.Root>
+                                    <span>Item disponível</span>
+                                </Checkbox.Root>
+                            </div>
                         </div>
-                    </div>
 
-                    <ButtonPrimary title='Salvar' />
-                </Dialog.Content>
+                        <ButtonPrimary title='Salvar' />
+                    </Dialog.Content>
                 </Dialog.Portal>
             </Dialog.Root>
         </>
