@@ -21,7 +21,9 @@ export default function Login() {
             </a>{" "}
           </p>
 
-          <input type="submit" value="Entrar" className={styles.buttonForm} />
+          <button type="submit" className={styles.buttonForm}>
+            Entrar
+          </button>
         </form>
       </div>
     </div>

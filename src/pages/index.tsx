@@ -3,6 +3,7 @@ import styles from "@/styles/Home.module.css";
 import ItemCard from "@/components/ItemCard";
 import { useEffect, useState } from "react";
 import api from "@/services/api";
+import { useRouter } from "next/router";
 
 type Item = {
   nome: string;
@@ -14,11 +15,17 @@ type Item = {
 export default function Home() {
   const [item, setItem] = useState<Item>({} as Item);
 
+  const router = useRouter()
+
   // useEffect(() => {
   //   api.get("/itens/3/").then((response) => {
   //     setItem(response.data);
   //   });
   // }, []);
+
+  useEffect(() => {
+    router.push("/login")
+  }, [])
 
   return (
     <>
@@ -28,14 +35,14 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div>
+      {/* <div>
         <ItemCard
           available={true}
           image={"/images/playstation_2.png"}
           name={"PlayStation 2"}
           price={120}
         />
-      </div>
+      </div> */}
     </>
   );
 }
