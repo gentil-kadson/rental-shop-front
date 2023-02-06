@@ -1,0 +1,9 @@
+.sectionAvailableItems {
+  margin: 3.25rem;
+}
+
+.itemCardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
