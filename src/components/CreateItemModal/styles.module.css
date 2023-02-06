@@ -1,13 +1,18 @@
 .fieldset {
   display: flex;
   flex-direction: column;
+  border: none;
 }
 
 .overlay {
-  background-color: var(--blackA9);
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0 0 0 / 0.5);
   position: fixed;
-  inset: 0;
-  animation: overlayShow 150ms cubic-bezier(0.16, 1, 0.3, 1);
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
 }
 
 .content {
@@ -19,11 +24,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 90vw;
-  max-width: 450px;
-  max-height: 85vh;
-  padding: 25px;
-  animation: contentShow 150ms cubic-bezier(0.16, 1, 0.3, 1);
+  padding: 4rem;
 }
 
 .content:focus {
@@ -50,4 +51,14 @@
   cursor: pointer;
   transition: 0.3s;
   background: rgba(255, 122, 0, 0.8);
+}
+
+.titleModal {
+  font-size: 1.88rem;
+}
+
+.uploadAndCheckboxContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
