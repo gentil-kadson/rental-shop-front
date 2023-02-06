@@ -4,6 +4,7 @@ import { Check, Plus, Upload, X } from 'phosphor-react';
 import ButtonPrimary from '../ButtonPrimary';
 
 import styles from "./styles.module.css"
+import UploadImageButton from '../UploadImageButton';
 
 export default function CreateItemModal() {
     return (
@@ -33,10 +34,7 @@ export default function CreateItemModal() {
                         </fieldset>
 
                         <div className={styles.uploadAndCheckboxContainer}>
-                            <button>
-                                <Upload size={20} />
-                                Adicionar imagem
-                            </button>
+                            <UploadImageButton />
 
                             <div>
                                 <Checkbox.Root>
