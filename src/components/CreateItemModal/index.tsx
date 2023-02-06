@@ -1,8 +1,6 @@
 import * as Dialog from '@radix-ui/react-dialog';
 
 import { Plus, X } from 'phosphor-react';
-import ButtonPrimary from '../ButtonPrimary';
-
 import styles from "./styles.module.css"
 import UploadImageButton from '../UploadImageButton';
 import Checkbox from './Checkbox';
@@ -40,7 +38,7 @@ export default function CreateItemModal() {
                             <Checkbox />
                         </div>
 
-                        <ButtonPrimary title='Salvar' />
+                        <button className={styles.saveButton}>Salvar</button>
                     </Dialog.Content>
                 </Dialog.Portal>
             </Dialog.Root>

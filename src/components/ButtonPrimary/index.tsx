@@ -1,8 +1,8 @@
-import { ReactNode } from "react"
+import React, { ReactNode } from "react"
 
 import styles from "./styles.module.css"
 
-interface ButtonPrimaryProps {
+interface ButtonPrimaryProps extends React.HtmlHTMLAttributes<HTMLButtonElement> {
     title: string
     icon?: ReactNode 
 }
