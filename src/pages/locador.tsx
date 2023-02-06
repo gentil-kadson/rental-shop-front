@@ -29,7 +29,7 @@ export default function Locador() {
             <section className={styles.sectionAvailableItems}>
                 <Title title="Itens disponíveis" />
 
-                <div className={styles.itemCardContainer}>
+                <div className="itemCardContainer">
                     {
                         examples.map(example => (
                             <ItemCard 
